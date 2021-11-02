@@ -5,7 +5,7 @@ def push():
         print("Enter the Number you wanna push:- ")
         a=int(input())
         stack1.append(a)
-    elif len(stack1)>numberOfElement:
+    elif len(stack1)>=numberOfElement:
         print("Stack is full")
 
 def pop():
