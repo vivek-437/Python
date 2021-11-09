@@ -1,3 +1,5 @@
+# err
+
 class Node:
     def __init__(self,data):
         # store data 
