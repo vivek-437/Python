@@ -1,5 +1,3 @@
-# err
-
 class Node:
     def __init__(self,data):
         # store data 
@@ -43,10 +41,9 @@ class doubleLinked_list:
     
 
     def add_empty(self,data):
-        new_node=Node(data)
-        n=self.head
-        if n is None:
-            n=new_node
+        if self.head is None:
+            new_node=Node(data)
+            self.head=new_node
         else:
             print("Linked list is not empty")
     
