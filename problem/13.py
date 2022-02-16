@@ -10,7 +10,6 @@ if __name__ == '__main__':
     totalnum=0
     for i in x:
         totalnum+=i
-    len()
     print ("%.2f" % round(totalnum/len(x),2)) 
 
 # 3
