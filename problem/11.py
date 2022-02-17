@@ -1,6 +1,6 @@
 if __name__ == '__main__':
     n = int(input())
-    arr = [2 ,3 ,6 ,6 ,5]
+    arr = list(map(int, input().split()))
     z=max(arr)
     while max(arr)==z:
         arr.remove(max(arr))
