@@ -1,3 +1,5 @@
+#shopping counter
+
 nshoes=int(input())
 shoesize=Counter(map(int,input().split()))
 coutshoe=int(input())
