@@ -1,0 +1,175 @@
+import math
+value = int(input("Please enter length:-"))
+
+# 1:-
+# for rows in range(0,value) :
+#     for cols in range(value+2) :
+#         print("*",end=" ")
+#     print('\r')
+
+
+
+# 2:-
+# for rows in range(0,value):
+#     for cols in range(value+2):
+#         if rows==0 or rows == value-1 or (rows and cols==0)or  (cols==value+1) :
+#             print("*",end=" ")
+#         else:
+#             print(' ',end=' ')
+#     print('\r')
+
+
+
+
+# 3:-
+# for rows in range(0,value):
+#     for cols in range(rows+1):
+#         print("*",end=" ")
+#     print('\r')
+
+
+
+
+# 4:-
+# for rows in range(0,value):
+#     for cols in range(value-rows):
+#         print('*',end=' ')
+#     print('\r')
+
+
+
+
+# 5:-
+
+# for rows in range(0,value):
+#     for cols in range(value-rows):
+#         if rows==0 or rows==value-1 or (rows and cols==0) or cols==value-rows-1:
+#             print("*",end=' ')
+#         else:
+#             print(" ",end=" ")
+#     print('\r')
+
+
+# new
+
+
+
+# 6:-
+
+# for rows in range(0,value):
+#     for cols in range(rows+1):
+#         print("*",end=" ")
+#     print("\r")
+# for rows in range(0,value):
+#     for cols in range(value-rows-1):
+#         print("*",end=' ')
+#     print('\r')
+
+
+
+
+# 7:-
+
+# space=value-1
+# for rows in range(0,value):
+#     for space in range(0,space,1):
+#         print(" ",end=' ')
+#     for cols in range(rows+1):
+#         print("*",end=" ")
+
+#     print("\r")
+
+
+
+
+# 8:-
+# spacing=value-1
+# for rows in range(0,value):
+#     for s in range(0,spacing):
+#         print(" ",end='')
+#     spacing=spacing-1
+#     for cols in range(rows+1):
+#         print("*",end=" ")
+
+#     print("\r")
+
+
+
+
+# 9:-
+# for rows in range(0,value):
+#     for space in range(rows):
+#         print(' ',end='')
+#     for cols in range(value-rows):
+#         print("*",end=' ')
+#     print('\r')
+
+
+
+
+# 10:-
+# space=value-1
+# for rows in range(0,value):
+#     for s in range(space):
+#         print(end=' ')
+#     space=space-1
+#     for cols in range(rows+1):
+#         print("*",end=" ")
+#     print('\r')
+# for rows in range(0,value):
+#     for space in range(rows+1):
+#         print(end=" ")
+#     for cols in range(value-rows-1):
+#         print("*",end=" ")
+#     print('\r')
+
+
+
+
+# 11:-
+# space = math.floor(value/2)
+# for rows in range(value):
+#     for cols in range(value):
+#         if rows == 0 or rows == (rows == value-1) or cols == 0 or cols == (value-1) or rows == space or (rows > space and cols == space):
+#             if (rows>space and cols==0) or (rows>space and cols==value-1):
+#                 print(end="  ")
+#                 continue
+#             print("*", end=" ")
+#         else:
+#             print(end="  ")
+#     print('\r')
+
+
+
+# 12:-
+# space = math.floor(value/2)
+# for rows in range(0,value):
+#     for cols in range(value):
+#         if rows<space and cols==space:
+#             print("*",end=" ")
+#         else:
+#             if (rows == 0 or rows == value-1 or cols == 0 or cols == (value-1) or rows == space) and(rows>=space):
+#                 print("*",end=" ")
+#                 continue
+#             print(end="  ")
+#     print("\r")
+
+
+
+# 13:-
+
+space=math.floor(value/2)
+
+for rows in range(value):
+    for cols in range(value):
+        if (cols<=space) and (cols==0 or cols==space or rows==0 or rows==value-1):
+            print("*",end=" ")
+            continue
+        if (cols>space) and rows==space:
+            print("*",end=" ")
+            continue
+        print(end="  ")
+
+            
+    print('\r')
+
